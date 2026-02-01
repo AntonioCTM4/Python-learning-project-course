@@ -1,0 +1,26 @@
+
+
+print("Escriba qualquier cosa: ")
+texto = input().lower()
+print("Escribe 3 letras que quiera buscar en tu texto: (Separadas por Espacios)")
+letras = input()
+letras1 = letras.split()
+len(letras1)
+
+a, b, c = letras1
+print("***************************************")
+print("-------Cosas que hay en el texto-------")
+print("***************************************")
+print(f"En tu texto hay {texto.count(a)} letras '{a}' ")
+print(f"En tu texto hay {texto.count(b)} letras '{b}' ")
+print(f"En tu texto hay {texto.count(c)} letras '{c}' ")
+print("*" * 40)
+texto1 = texto.split()
+print(f"En tu texto hay {len(texto1)} palabras")
+print("*" * 40)
+texto1 = str(texto)
+print(f"la primera letra de tu texto es {texto1[0]}")
+print(f"la ultima letra de tu texto es {texto1[-1]}")
+print(f"tu texto de alfrente hacia atras seria: {texto1[::-1]}")
+print(f"Existe la palabra python en tu texto: ", "python" in texto1)
+print("*" * 40)
